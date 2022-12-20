@@ -45,7 +45,7 @@ const getQuery = () => {
 
 const exportResult = (res) => {
   const query = getQuery();
-  console.log(res)
+  console.log(JSON.stringify(res))
 
   // conn.query(query, [res], (err) => {
   //   if (err) throw err;
