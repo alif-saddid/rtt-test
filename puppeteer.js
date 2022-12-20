@@ -4,8 +4,7 @@ const puppeteer = require("puppeteer");
 const shortUUID = require("short-uuid");
 const generator = shortUUID();
 
-const TRIAL_NUMBER = 10
-const PEER_NUMBER = 2
+const { TRIAL_NUMBER, PEER_NUMBER } = process.env;
 
 const mysql = require("mysql");
 const conn = mysql.createConnection({
