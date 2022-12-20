@@ -55,7 +55,7 @@ const exportResult = (res) => {
 
 (async () => {
   const browser = await puppeteer.launch({
-    executablePath: "/opt/homebrew/bin/chromium",
+    executablePath: "/usr/bin/google-chrome",
     args: ["--no-sandbox"],
     // headless: false,
     // devtools: true
